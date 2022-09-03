@@ -2,7 +2,14 @@
 # -*- coding: utf-8 -*-
 def majuscule(mot):
     # TODO completer la fonction ici
-    return mot
+    nouveauMot = ""
+    for lettre in mot:
+        if 'a' <= lettre <= 'z':
+            nouveauMot += chr(ord(lettre) - 32)
+        else:
+            nouveauMot += lettre
+
+    return nouveauMot
 
 
 if __name__ == '__main__':
